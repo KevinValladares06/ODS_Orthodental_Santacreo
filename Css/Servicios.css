@@ -15,7 +15,9 @@
 
 .wrapper h1{
     font-size: 3em;
-    margin: 25px 0;
+    /* margin: 25px 0; */
+    margin-top: 85px;
+    margin-bottom: 25px;
     text-align: center;
     font-weight: 500;
 }
@@ -40,6 +42,7 @@
     background: #fff;
     margin: 10px 4px;
     box-shadow: 0px 15px 30px rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
 .card i{
@@ -58,20 +61,30 @@
     text-align: center;
 }
 
+.card:hover i,
+.card:hover p{
+    color: #fff;
+}
+
+.card:hover h2{
+    font-weight: 500;
+    color: #f2f2f2;
+}
+
 .card:nth-child(1):hover{
     background: linear-gradient(45deg,
                 rgba(97, 182, 198, 1) 0%,
-                rgba(255, 255, 255, 0.7) 100%),
-                url('imagenes/endodoncias.png');
+                rgba(255, 255, 255, 0.216) 100%),
+                url('../Recursos/Evaluacion.png');
 
     background-size: cover;
 }
 
 .card:nth-child(2):hover{
     background: linear-gradient(45deg,
-                rgba(97, 182, 198, 1) 0%,
-                rgba(255, 255, 255, 0.7) 100%),
-                url('imagenes/endodoncias.png');
+                rgba(97, 182, 198, 0.8) 0%,
+                rgba(255, 255, 255, 0.216) 100%),
+                url('../Recursos/Profilaxis.png');
 
     background-size: cover;
 }
@@ -79,8 +92,8 @@
 .card:nth-child(3):hover{
     background: linear-gradient(45deg,
                 rgba(97, 182, 198, 1) 0%,
-                rgba(255, 255, 255, 0.7) 100%),
-                url('imagenes/endodoncias.png');
+                rgba(255, 255, 255, 0.216) 100%),
+                url('../Recursos/Restauraciones.png');
 
     background-size: cover;
 }
@@ -88,8 +101,8 @@
 .card:nth-child(4):hover{
     background: linear-gradient(45deg,
                 rgba(97, 182, 198, 1) 0%,
-                rgba(255, 255, 255, 0.7) 100%),
-                url('imagenes/endodoncias.png');
+                rgba(255, 255, 255, 0.216) 100%),
+                url('../Recursos/Endodoncias.png');
 
     background-size: cover;
 }
@@ -97,8 +110,8 @@
 .card:nth-child(5):hover{
     background: linear-gradient(45deg,
                 rgba(97, 182, 198, 1) 0%,
-                rgba(255, 255, 255, 0.7) 100%),
-                url('imagenes/endodoncias.png');
+                rgba(255, 255, 255, 0.216) 100%),
+                url('../Recursos/Extraccion.png');
 
     background-size: cover;
 }
@@ -106,8 +119,8 @@
 .card:nth-child(6):hover{
     background: linear-gradient(45deg,
                 rgba(97, 182, 198, 1) 0%,
-                rgba(255, 255, 255, 0.7) 100%),
-                url('imagenes/endodoncias.png');
+                rgba(255, 255, 255, 0.216) 100%),
+                url('../Recursos/Blanqueamiento.png');
 
     background-size: cover;
 }
@@ -115,8 +128,8 @@
 .card:nth-child(7):hover{
     background: linear-gradient(45deg,
                 rgba(97, 182, 198, 1) 0%,
-                rgba(255, 255, 255, 0.7) 100%),
-                url('imagenes/endodoncias.png');
+                rgba(255, 255, 255, 0.216) 100%),
+                url('../Recursos/Ortodoncia.png');
 
     background-size: cover;
 }
@@ -124,8 +137,8 @@
 .card:nth-child(8):hover{
     background: linear-gradient(45deg,
                 rgba(97, 182, 198, 1) 0%,
-                rgba(255, 255, 255, 0.7) 100%),
-                url('imagenes/endodoncias.png');
+                rgba(255, 255, 255, 0.216) 100%),
+                url('../Recursos/Protesis.png');
 
     background-size: cover;
 }
@@ -133,8 +146,8 @@
 .card:nth-child(9):hover{
     background: linear-gradient(45deg,
                 rgba(97, 182, 198, 1) 0%,
-                rgba(255, 255, 255, 0.7) 100%),
-                url('imagenes/endodoncias.png');
+                rgba(255, 255, 255, 0.216) 100%),
+                url('../Recursos/Implantes.png');
 
     background-size: cover;
 }
@@ -142,8 +155,8 @@
 .card:nth-child(10):hover{
     background: linear-gradient(45deg,
                 rgba(97, 182, 198, 1) 0%,
-                rgba(255, 255, 255, 0.7) 100%),
-                url('imagenes/endodoncias.png');
+                rgba(255, 255, 255, 0.216) 100%),
+                url('../Recursos/Sonrisa.png');
 
     background-size: cover;
 }
@@ -151,8 +164,8 @@
 .card:nth-child(11):hover{
     background: linear-gradient(45deg,
                 rgba(97, 182, 198, 1) 0%,
-                rgba(255, 255, 255, 0.7) 100%),
-                url('imagenes/endodoncias.png');
+                rgba(255, 255, 255, 0.216) 100%),
+                url('../Recursos/Odontopediatria.png');
 
     background-size: cover;
 }
@@ -160,8 +173,8 @@
 .card:nth-child(12):hover{
     background: linear-gradient(45deg,
                 rgba(97, 182, 198, 1) 0%,
-                rgba(255, 255, 255, 0.7) 100%),
-                url('imagenes/endodoncias.png');
+                rgba(255, 255, 255, 0.216) 100%),
+                url('../Recursos/Exodoncia.png');
 
     background-size: cover;
 }
