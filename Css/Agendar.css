@@ -235,3 +235,161 @@ main {
       max-width: 100%;
     }
   }
+
+  /* Footer */ 
+  footer {
+    position: 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 10px, 10px -2px rgba(97, 182, 198, 0.15);
+    border-radius: 20px 40px 0 0;
+    transition: background 0.3s linear;
+}
+
+.containers {
+    max-width: 1240px;
+    padding:20px 40px;
+    margin: auto;
+}
+
+.content_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.perfil .logo_area{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.perfil .logo_area img{
+    border: 1px solid #fff;
+    width: 125px;
+    height: 40px;
+}
+
+.logo_area .logo_name{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0.4rem;
+    padding-top: 0.5rem; 
+    color: #094a72;;
+}
+
+.desc_area{
+    max-width: 350px;
+    margin-bottom: 1rem;
+}
+
+.desc_area p{
+    color: #828282;
+    font-size: 400;
+    line-height: 28px;
+    text-align: justify;
+}
+
+.social_media a{
+    color: #828282;
+    margin-right: 22px;
+    font-size: 24px;
+}
+
+.social_media a:hover{
+    color: #094a72;
+}
+
+.service_area{
+    display: flex;
+}
+
+.service_header{
+    margin-right: 70px;
+}
+
+li.service_name{
+    color: #000;
+    font-weight: 600;
+}
+
+.service_header li a{
+    color: #828282;
+    padding-bottom: 1px;
+    font-weight: 400;
+}
+
+.service_header li a:hover{
+    color: #094a72;
+}
+
+.service_header li{
+    margin-bottom: 10px;
+}
+
+hr{
+    height: 1px;
+    border: none;
+    background-color: #828282;
+    margin-bottom: 1rem;
+}
+
+.footer_bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+.copy_right{
+    color: #828282;
+    display: flex;
+    align-items: center;
+}
+
+.copy_right span{
+    margin-left: 8px;
+    font-weight: 400;
+    letter-spacing: 0.135rem;
+}
+
+.tou a{
+    color: #828282;
+    margin-left: 0.5rem;
+    margin-right: 20px;
+}
+
+.tou a:hover{
+    color: #094a72;
+}
+
+@media screen and (max-width: 768px){
+    .content_footer{
+        flex-wrap: wrap;
+        justify-content: left;     
+    }
+    .service_area{
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .service_header{
+        margin-left: 0;
+        margin-right: 40px;
+    }
+    .social_media{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 510px){
+    .service_header{
+        margin-bottom: 8px;
+    }
+    .copy_right{
+        margin-bottom: 8px;
+    }
+}
