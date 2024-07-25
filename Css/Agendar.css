@@ -1,0 +1,395 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.content {
+    min-height: 70px;
+    background: linear-gradient(90deg,
+            rgb(255, 255, 255)10%,
+            rgb(97, 182, 198)90%);
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 16px;
+    padding: 10px;
+    color: #094a72;
+    display: block;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover{
+    color: #468ead;
+}
+
+@media (min-width: 991px) {
+    .menu .navbar ul li a::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #094a72;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .menu .navbar ul li a:hover::before {
+        width: 90%;
+        visibility: visible;
+    }
+}
+
+@media (min-width:480px){
+    header{
+        flex-direction:row;
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        z-index: 1001;
+    }
+}
+
+#menu {
+    display: none;
+}
+
+.logo {
+    width: 250px;
+    height: 50px;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+
+
+@media(max-width:991px) {
+    .content {
+        min-height: 90px;
+    }
+
+    .menu {
+        top: 0;
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(90deg,
+                rgb(255, 255, 255)10%,
+                rgb(97, 182, 198)90%);
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+}
+
+/* AGENDAR CITA */
+main {
+    padding: 100px 20px 20px; /* Añadir espacio para evitar superposición con el header fijo */
+  }
+  
+  .agendar-contenedor {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #094a72;
+    margin-bottom: 20px;
+  }
+  
+  .agendar-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .formulario-agendar {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .formulario-agendar label {
+    margin-top: 17px;
+    color: #094a72;
+  }
+  
+  .formulario-agendar input,
+  .formulario-agendar select,
+  .formulario-agendar textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .formulario-agendar textarea {
+    resize: vertical;
+  }
+  
+  .formulario-agendar button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #094a72;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .formulario-agendar button:hover {
+    background-color: #468ead;
+  }
+  
+  .info-agendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+  }
+  
+  .imagen-agendar {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .texto-info {
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    color: #094a72;
+  }
+  
+  @media (max-width: 768px) {
+    .agendar-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .formulario-agendar {
+      margin-right: 0;
+    }
+  
+    .info-agendar {
+      margin-top: 20px;
+      max-width: 100%;
+    }
+  }
+
+  /* Footer */ 
+  footer {
+    position: 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 10px, 10px -2px rgba(97, 182, 198, 0.15);
+    border-radius: 20px 40px 0 0;
+    transition: background 0.3s linear;
+}
+
+.containers {
+    max-width: 1240px;
+    padding:20px 40px;
+    margin: auto;
+}
+
+.content_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.perfil .logo_area{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.perfil .logo_area img{
+    border: 1px solid #fff;
+    width: 125px;
+    height: 40px;
+}
+
+.logo_area .logo_name{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0.4rem;
+    padding-top: 0.5rem; 
+    color: #094a72;;
+}
+
+.desc_area{
+    max-width: 350px;
+    margin-bottom: 1rem;
+}
+
+.desc_area p{
+    color: #828282;
+    font-size: 400;
+    line-height: 28px;
+    text-align: justify;
+}
+
+.social_media a{
+    color: #828282;
+    margin-right: 22px;
+    font-size: 24px;
+}
+
+.social_media a:hover{
+    color: #094a72;
+}
+
+.service_area{
+    display: flex;
+}
+
+.service_header{
+    margin-right: 70px;
+}
+
+li.service_name{
+    color: #000;
+    font-weight: 600;
+}
+
+.service_header li a{
+    color: #828282;
+    padding-bottom: 1px;
+    font-weight: 400;
+}
+
+.service_header li a:hover{
+    color: #094a72;
+}
+
+.service_header li{
+    margin-bottom: 10px;
+}
+
+hr{
+    height: 1px;
+    border: none;
+    background-color: #828282;
+    margin-bottom: 1rem;
+}
+
+.footer_bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+.copy_right{
+    color: #828282;
+    display: flex;
+    align-items: center;
+}
+
+.copy_right span{
+    margin-left: 8px;
+    font-weight: 400;
+    letter-spacing: 0.135rem;
+}
+
+.tou a{
+    color: #828282;
+    margin-left: 0.5rem;
+    margin-right: 20px;
+}
+
+.tou a:hover{
+    color: #094a72;
+}
+
+@media screen and (max-width: 768px){
+    .content_footer{
+        flex-wrap: wrap;
+        justify-content: left;     
+    }
+    .service_area{
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .service_header{
+        margin-left: 0;
+        margin-right: 40px;
+    }
+    .social_media{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 510px){
+    .service_header{
+        margin-bottom: 8px;
+    }
+    .copy_right{
+        margin-bottom: 8px;
+    }
+}

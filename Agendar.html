@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ODS Agendar</title>
-    <link rel="stylesheet" href="Css/Inicio.css" />
+    <title>Agendar cita</title>
+    <link rel="stylesheet" href="Css/Agendar.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -32,6 +36,126 @@
         </div>
       </div>
     </header>
-    <h1>Agendar</h1>
+    <main>
+      <div class="container agendar-contenedor">
+        <h1>Agendar Cita</h1>
+        <div class="agendar-flex">
+          <form class="formulario-agendar">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+  
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required />
+  
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required />
+  
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required />
+  
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required />
+  
+            <label for="servicio">Servicio:</label>
+            <select id="servicio" name="servicio" required>
+              <option value="Diseño de sonrisa">Diseño de sonrisa</option>
+              <option value="Limpieza general">Limpieza general</option>
+              <option value="Protesis">Protesis</option>
+              <option value="Blanqueamiento">Blanqueamiento</option>
+              <option value="Ortodoncia">Ortodoncia</option>
+              <option value="Endodoncia">Endodoncia</option>
+              <option value="Cirugía de cordales">Cirugía de cordales</option>
+              <option value="Implantes">Implantes</option>
+              <option value="Otra">Otra</option>
+            </select>
+  
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+  
+            <button type="submit">Agendar</button>
+          </form>
+          <div class="info-agendar">
+            <img src="/Recursos/agendacita.jpg" alt="Agendar Cita" class="imagen-agendar" />
+            <div class="texto-info">
+              <p>Utilice este formulario para agendar una cita con nosotros. Por favor complete todos los campos y nos pondremos en contacto para confirmar su cita. </br>
+                También puede llamar al +504 8997-6800 o visitarnos en el Centro Comercial Las Hadas, segundo nivel, local 207 para más información.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="containers">
+        <div class="content_footer">
+          <div class="perfil">
+            <div class="logo_area">
+              <img src="Recursos/Logo.png" alt="logo" />
+              <span class="logo_name">Orthodental Santacreo</span>
+            </div>
+            <div class="desc_area">
+              <p>
+                Somos profesionales con más de 8 años de experiencia en el
+                cuidado de tu sonrisa y salud bucal
+              </p>
+            </div>
+            <div class="social_media">
+              <a
+                href="https://api.whatsapp.com/send?phone=50489976800&text=%C2%A1Hola!%20%F0%9F%98%80%20Me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20ODS%20%F0%9F%A6%B7"
+                target="_blank"
+              >
+                <i class="bx bxl-whatsapp-square"></i>
+              </a>
+              <a
+                href="https://web.facebook.com/people/ODS-HN/61555834225033/"
+                target="_blank"
+              >
+                <i class="bx bxl-facebook-square"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/ods_orthodentalsantacreo"
+                target="_blank"
+              >
+                <i class="bx bxl-instagram-alt"></i>
+              </a>
+              <a
+                href="https://www.tiktok.com/@ods_orthodentalsantacreo"
+                target="_blank"
+              >
+                <i class="bx bxl-tiktok"></i>
+              </a>
+            </div>
+          </div>
+          <div class="service_area">
+            <ul class="service_header">
+              <li class="service_name">Services</li>
+              <li><a href="#">Evaluación</a></li>
+              <li><a href="#">Profilaxis</a></li>
+              <li><a href="#">Restauraciones (Tapones)</a></li>
+              <li><a href="#">Endodoncias</a></li>
+            </ul>
+            <ul class="service_header">
+              <li class="service_name">Company</li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Join Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="footer_bottom">
+          <div class="copy_right">
+            <i class="bx bxs-copyright"></i>
+            <span>2024 ODS Orthodental Santacreo</span>
+          </div>
+          <div class="tou">
+            <a href="#">Term of Use</a>
+            <a href="#">Privacy Polici</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
