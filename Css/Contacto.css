@@ -136,6 +136,50 @@ body {
     font-style: italic;
 }
 
+.inputBox.error input,
+.inputBox.error textarea {
+    border-color: #e74c3c;
+}
+
+.inputBox.success input,
+.inputBox.success textarea {
+    border-color: #2ecc71;
+}
+
+.inputBox i{
+    visibility: hidden;
+    position: absolute;
+    padding-top: 45px;
+    padding-left: 240px;
+}
+
+
+.inputBox.success .bxs-check-circle {
+    color: #2ecc71;
+    visibility: hidden;
+}
+
+
+.inputBox.error i.bxs-error-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.inputBox small {
+    color: #e74c3c;
+    visibility: hidden;
+}
+
+.inputBox.error small {
+    visibility: visible;
+}
+
+.inputBox.success i.bxs-check-circle {
+    visibility: visible;
+}
+
+
+
 /* info */
 .info{
     background: #094a72;
@@ -251,6 +295,13 @@ body {
         padding: 10px;
         align-items: center;
         position:static;
+    }
+
+    .inputBox i{
+        visibility: hidden;
+        position: absolute;
+        padding-top: 45px;
+        padding-left: 270px;
     }
 
     .map{
