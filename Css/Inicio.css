@@ -150,11 +150,40 @@ h1 {
     }
 }
 
+
+/* INICIO */
+.wrapper {
+    max-width: 1200px;
+}
+
+.wrapper .carousel {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.carousel img{
+    height: 240px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100% / 3);
+}
+
+.carousel img:first-child{
+    margin-left: 0px;
+}
+
+
+
+
+
+
 /* Footer */ 
 
 main{
-    width: 100%;
-    height: 100%;
+    padding: 100px 20px 20px;
+    background: #6c9bb9;
 }
 
 .show{
