@@ -151,21 +151,34 @@ h1 {
 }
 
 /* INICIO */
+.panel {
+    width: 100%;
+    height: 40vh; /* Ajusta la altura del panel según el diseño deseado */
+    background: url("../images/hero.jpg") center no-repeat;
+    background-size: cover; /* Asegura que la imagen cubra completamente el contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido horizontal y verticalmente */
+    text-align: center;
+    margin-top: 196px; /* Espacio debajo de la barra de navegación */
+    margin-bottom: 200px; /* Espacio entre el panel y el carrusel */
+}
 
-.blue-panel {
-    background-color: #007bff;
-    color: white;
-    padding: 40px; /* Aumentar el padding para hacerlo más alto */
-    text-align: left;
-    margin-bottom: 20px;
-    min-height: 200px; /* Establecer una altura mínima */
-  }
-  
-  .blue-panel p {
-    margin: 0;
-  }
+@media (max-width: 768px) {
+    .panel {
+        height: 30vh; /* Ajustar la altura para dispositivos móviles */
+        margin-top: 60px; /* Ajustar el espacio superior para dispositivos móviles */
+    }
+}
 
-.carousel-container {
+@media (max-width: 480px) {
+    .panel {
+        height: 60vh; /* Ajustar la altura para dispositivos móviles más pequeños */
+        margin-top: 50px; /* Ajustar el espacio superior para dispositivos móviles más pequeños */
+    }
+}
+
+.carousel-containers {
     overflow: hidden;
     width: 100%;
     max-width: 1200px;
@@ -179,7 +192,7 @@ h1 {
     width: calc(6 * (15% - 20px) + 6 * 20px); /* Ajusta la longitud total del carrusel basado en el número de imágenes */
 }
 
-.image-box {
+.image-boxs {
     background-color: #f0f0f0;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -192,26 +205,26 @@ h1 {
     margin: 10px; /* Añade un margen para las imágenes */
 }
 
-.image-box img {
+.image-boxs img {
     width: 100%;
     height: auto;
     display: block;
 }
 
 @media (max-width: 1024px) {
-    .image-box {
+    .image-boxs {
         flex: 1 0 calc(33.33% - 40px); /* 3 por fila en tabletas */
     }
 }
 
 @media (max-width: 768px) {
-    .image-box {
+    .image-boxs {
         flex: 1 0 calc(50% - 40px); /* 2 por fila en móviles */
     }
 }
 
 @media (max-width: 480px) {
-    .image-box {
+    .image-boxs {
         flex: 1 0 calc(100% - 40px); /* 1 por fila en móviles pequeños */
     }
 }
@@ -223,7 +236,7 @@ h1 {
     background: transparent; /* Fondo transparente */
     color: #333; /* Color del texto del botón */
     border: none;
-    font-size: 24px; /* Tamaño del símbolo */
+    font-size: 2px; /* Tamaño del símbolo */
     padding: 10px;
     cursor: pointer;
     z-index: 10;
