@@ -393,3 +393,12 @@ hr{
         margin-bottom: 8px;
     }
 }
+
+/* Errores */
+.error-message {
+    color: red;
+    font-weight: bold;
+    font-size: 0.875em;
+    margin-top: 0.25em;
+    display: block;
+  }
