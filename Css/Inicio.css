@@ -151,6 +151,20 @@ h1 {
 }
 
 /* INICIO */
+
+.blue-panel {
+    background-color: #007bff;
+    color: white;
+    padding: 40px; /* Aumentar el padding para hacerlo más alto */
+    text-align: left;
+    margin-bottom: 20px;
+    min-height: 200px; /* Establecer una altura mínima */
+  }
+  
+  .blue-panel p {
+    margin: 0;
+  }
+
 .carousel-container {
     overflow: hidden;
     width: 100%;
