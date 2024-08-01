@@ -159,11 +159,13 @@ h1 {
     text-align: left;
     margin-bottom: 20px;
     min-height: 200px; /* Establecer una altura mínima */
-  }
-  
-  .blue-panel p {
+    margin-top: 70px; /* Ajusta esta altura para que coincida con la altura del header */
+}
+
+.blue-panel p {
     margin: 0;
-  }
+}
+
 
 .carousel-containers {
     overflow: hidden;
