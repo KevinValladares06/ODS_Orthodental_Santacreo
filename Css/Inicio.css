@@ -150,28 +150,77 @@ h1 {
     }
 }
 
-
 /* INICIO */
-.wrapper {
-    max-width: 1200px;
-}
-
-.wrapper .carousel {
-    font-size: 0px;
-    cursor: pointer;
+.carousel-container {
     overflow: hidden;
-    white-space: nowrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
 
-.carousel img{
-    height: 240px;
-    object-fit: cover;
-    margin-left: 14px;
-    width: calc(100% / 3);
+.carousel {
+    display: flex;
+    transition: transform 0.3s linear; /* Aumentar la velocidad de la transición */
+    width: calc(6 * (15% - 20px) + 6 * 20px); /* Ajusta la longitud total del carrusel basado en el número de imágenes */
 }
 
-.carousel img:first-child{
-    margin-left: 0px;
+.image-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    width: calc(15% - 20px); /* Ajusta el ancho de cada caja para que quepan más en una fila */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    flex: 1 0 calc(25% - 40px); /* Asegura que cada imagen ocupe menos espacio */
+    margin: 10px; /* Añade un margen para las imágenes */
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .image-box {
+        flex: 1 0 calc(33.33% - 40px); /* 3 por fila en tabletas */
+    }
+}
+
+@media (max-width: 768px) {
+    .image-box {
+        flex: 1 0 calc(50% - 40px); /* 2 por fila en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-box {
+        flex: 1 0 calc(100% - 40px); /* 1 por fila en móviles pequeños */
+    }
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent; /* Fondo transparente */
+    color: #333; /* Color del texto del botón */
+    border: none;
+    font-size: 24px; /* Tamaño del símbolo */
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
 }
 
 
@@ -182,8 +231,8 @@ h1 {
 /* Footer */ 
 
 main{
-    padding: 100px 20px 20px;
-    background: #6c9bb9;
+    width: 100%;
+    height: 100%;
 }
 
 .show{
