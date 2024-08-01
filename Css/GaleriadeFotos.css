@@ -11,8 +11,8 @@ body {
 }
 
 .gallery{
-    width: 100%;
-    margin-top: 850px;
+    width: 200%;
+    margin-top: 1050px;
     padding-bottom: auto;
 }
 
@@ -213,7 +213,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     margin: 20px;
 }
 
@@ -223,7 +223,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
-    width: calc(15% - 20px); /* Ajusta el ancho de cada caja para que quepan 3 en una fila */
+    width: calc(10% - 10px); /* Ajusta el ancho de cada caja para que quepan 3 en una fila */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
