@@ -1,95 +1,112 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
-	background: #99baec;
-	color: #fff;
+    background: rgb(221, 219, 219);
 }
 
-.containers {
-	padding: 50px 0;
+header {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.wrapper {
-	padding: 10px 10%;
-}
-
-.card_area {
-	display: grid;
-	margin-top: 50px;
-	grid-gap: 30px;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0; /* Ajusta este valor para cambiar la distancia desde el menú */
+    margin-top: 50px; /* Para dar espacio entre el menú y las tarjetas */
 }
 
 .card {
-	position: relative;
-	border-radius: 10px;
-	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-	overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
 }
 
-.card_img {
-	height: 350px;
-	width: 100%;
-	display: block;
-	border-radius: 10px;
-	transition: transform 0.5s;
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
 }
 
-.overlay {
-	height: 0;
-	width: 100%;
-	position: absolute;
-	display: flex;
-	overflow: hidden;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	bottom: 0;
-	border-radius: 10px;
-	background: linear-gradient(transparent, #1c1c1c 60%);
-	padding: 0 50px;
-	text-align: center;
-	font-size: 14px;
-	transition: height 0.5s;
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
 }
 
-.overlay h3 {
-	margin-top: 55px;
-	margin-bottom: 5px;
-	font-size: 30px;
-	font-weight: 500;
-	letter-spacing: 2px;
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.overlay p {
-	margin-top: 10px;
-	font-size: 14px;
-	text-align: center;
-	font-weight: 500;
-	color: #fff;
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
 }
 
-.overlay a {
-	margin-top: 10px;
-	font-size: 14px;
-	text-decoration: none;
-	font-weight: 500;
-	color: #054ea1;
-	background: #fff;
-	border-radius: 50px;
-	text-align: center;
-	padding: 5px 15px;
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
 }
 
-.card:hover .card_img {
-	transform: scale(1.2);
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
 }
 
-.card:hover .overlay {
-	height: 100%;
+.card .back .link a {
+    color: #f3f3f3;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+} 
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+footer {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
