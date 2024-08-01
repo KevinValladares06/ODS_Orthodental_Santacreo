@@ -165,7 +165,7 @@ h1 {
     margin: 0;
   }
 
-.carousel-container {
+.carousel-containers {
     overflow: hidden;
     width: 100%;
     max-width: 1200px;
@@ -179,7 +179,7 @@ h1 {
     width: calc(6 * (15% - 20px) + 6 * 20px); /* Ajusta la longitud total del carrusel basado en el número de imágenes */
 }
 
-.image-box {
+.image-boxs {
     background-color: #f0f0f0;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -192,26 +192,26 @@ h1 {
     margin: 10px; /* Añade un margen para las imágenes */
 }
 
-.image-box img {
+.image-boxs img {
     width: 100%;
     height: auto;
     display: block;
 }
 
 @media (max-width: 1024px) {
-    .image-box {
+    .image-boxs {
         flex: 1 0 calc(33.33% - 40px); /* 3 por fila en tabletas */
     }
 }
 
 @media (max-width: 768px) {
-    .image-box {
+    .image-boxs {
         flex: 1 0 calc(50% - 40px); /* 2 por fila en móviles */
     }
 }
 
 @media (max-width: 480px) {
-    .image-box {
+    .image-boxs {
         flex: 1 0 calc(100% - 40px); /* 1 por fila en móviles pequeños */
     }
 }
