@@ -6,13 +6,12 @@
 
 body, html {
     height: 100%;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Open Sans', Arial , sans-serif;
 }
 
 .hero {
     background-color: #267190; 
     height: 50vh;
-    width: 201.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,6 +32,7 @@ body, html {
     display: flex;
     justify-content: center;
     gap: 50px;
+    
 }
 
 .hero-container {
@@ -48,18 +48,13 @@ body, html {
 }
 
 .hero h1 {
-    font-size: 3.5em;
+    font-size: 3em;
     display: flex;
-    
     justify-content: center;
     align-items: center;
-    margin-top: 120px;
-    margin-left: 620px;
+    margin-top: 40px;
+    margin-left: 50px;
     margin-right: 50px;
-
-
-    white-space: nowrap;
-    
 }
 
 .card {
@@ -67,14 +62,16 @@ body, html {
     flex-direction: column;
     margin: 2rem;
     padding: 1%;
+    /*border: 1px solid #ffffff;*/
     max-width: 300px;
     min-width: 100px;
     min-height: 300px;
+    /*box-shadow: 3px 3px 5px #959595;*/
+    /*background-color: #FFF;*/
     text-align: center;
-    justify-content: center;
 }
 
-.card img {
+.card img{
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -123,23 +120,16 @@ body, html {
 }
 
 @media (max-width: 768px) {
-
-    header{
-        position: relative;
-        z-index: 1000;
-    }
-
     .hero {
         margin-left: 10px;
         margin-right: 10px;
         height: 40vh;
-        width: 116.5vh;
     }
 
     .hero h1 {
         font-size: 2em;
-        margin-top: 120px;
-        margin-left: 600px;
+        margin-top: 20px;
+        margin-left: 20px;
         margin-right: 20px;
     }
 
@@ -166,20 +156,22 @@ body, html {
 }
 
 @media (max-width: 480px) {
+    header{
+        position: relative;
+        z-index: 1000;
+    }
+
     .hero {
         margin-left: 5px;
         margin-right: 5px;
         height: 35vh;
-        width: 48vh;
     }
 
     .hero h1 {
         font-size: 1.5em;
-        margin-top: 65px;
-        margin-left: 600px;
+        margin-top: 10px;
+        margin-left: 10px;
         margin-right: 10px;
-
-        white-space: inherit;
     }
 
     .hero-container {
