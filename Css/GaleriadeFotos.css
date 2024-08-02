@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     height: 100vh;
     margin: 0;
@@ -8,7 +14,11 @@ body {
     align-items: center;
     background: linear-gradient(190deg, rgb(255, 255, 255) 0%, 
     rgb(50, 112, 118) 100%);
+
+    font-family: 'Open Sans', Arial, sans-serif;
 }
+
+
 
 .gallery{
     width: 100%;
