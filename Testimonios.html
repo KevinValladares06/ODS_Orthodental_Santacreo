@@ -43,7 +43,6 @@
       </div>
     </header>
     <section class="section__container">
-      <h2>Testimonios</h2>
       <h1>Opiniones Destacadas</h1>
       <div class="section__grid">
         <div class="section__card">
@@ -209,29 +208,33 @@
 
       <div class="wrappers">
         <h3>Valora Nuestro Servicio</h3>
-        <form action="#">
-          <div class="rating">
-            <input type="number" name="rating" hidden />
-            <i class="bx bx-star star" style="--i: 0"></i>
-            <i class="bx bx-star star" style="--i: 1"></i>
-            <i class="bx bx-star star" style="--i: 2"></i>
-            <i class="bx bx-star star" style="--i: 3"></i>
-            <i class="bx bx-star star" style="--i: 4"></i>
-          </div>
-          <textarea
-            name="opinion"
-            cols="30"
-            rows="5"
-            placeholder="Tu opinión..."
-          ></textarea>
-          <div class="btn-group">
-            <button type="submit" class="btn submit">Submit</button>
-            <button class="btn cancel">Cancel</button>
-          </div>
+        <form id="ratingForm" action="#">
+            <div class="rating">
+                <input type="number" name="rating" hidden />
+                <i class="bx bx-star star" style="--i: 0"></i>
+                <i class="bx bx-star star" style="--i: 1"></i>
+                <i class="bx bx-star star" style="--i: 2"></i>
+                <i class="bx bx-star star" style="--i: 3"></i>
+                <i class="bx bx-star star" style="--i: 4"></i>
+            </div>
+            <textarea
+                id="opinion"
+                name="opinion"
+                cols="30"
+                rows="5"
+                placeholder="Tu opinión..."
+                maxlength="100"
+            ></textarea>
+            <div id="error" class="error"></div>
+            <div class="btn-group">
+                <button type="submit" class="btn submit">Submit</button>
+                <button type="button" class="btn cancel">Cancel</button>
+            </div>
         </form>
-      </div>
+    </div>
     </section>
     <script src="JS/TestimoniosForm.js"></script>
+    <script src="JS/TestimonioValidacion.js"></script>
 
     <footer>
       <div class="containers">
