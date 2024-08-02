@@ -40,9 +40,18 @@
     </header>
 
     <main>
-      <div class="panel">
-        <img src="Recursos/Fondo.jpg" alt="Fondo ods" />
-      </div>
+      <section class="hero">
+        <picture>
+          <source srcset="Recursos/ODSFondo.png" media="(min-width: 1025px)" />
+          <source srcset="Recursos/ODSFondo.png" media="(min-width: 380px)" />
+          <img src="Recursos/ODSFondo.png" alt="Hero" />
+          <span class="hero-content">
+            <form action="Agendar.html" method="get">
+              <button>Agendar Cita</button>
+            </form>
+          </span>
+        </picture>
+      </section>
 
       <div class="carousel-containers">
         <div class="carousel">
