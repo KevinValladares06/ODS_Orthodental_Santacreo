@@ -127,7 +127,7 @@ body {
   color: var(--text-light);
   transition: 0.3s;
 }
-
+/*------*/
 .error { 
   color: #149e9e; 
 }
