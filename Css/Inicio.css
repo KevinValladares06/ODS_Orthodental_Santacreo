@@ -162,7 +162,7 @@ h1 {
     position: relative;
     height: 85vh;
     overflow: hidden;
-    width:100vw;
+    width:98.5vw;
 }
 
 .heros img{
@@ -197,6 +197,10 @@ h1 {
     margin-top: 22rem;
 }
 
+
+.heros .heros-content button:hover {
+    background: rgb(97, 182, 198);
+}
 
 @media (max-width: 768px) {
     .heros {
