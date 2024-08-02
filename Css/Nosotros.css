@@ -6,7 +6,7 @@
 
 body, html {
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', Arial , sans-serif;
 }
 
 .hero {
@@ -99,16 +99,23 @@ body, html {
     .hero {
         margin-left: 15px;
         margin-right: 15px;
+        height: 45vh;
     }
-    
 
-    .card img {
-        width: 250px;
-        height: 250px;
+    .hero h1 {
+        font-size: 2.5em;
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
     .hero-container {
         top: -100px; 
+    }
+
+    .card img {
+        width: 250px;
+        height: 250px;
     }
 }
 
@@ -116,6 +123,18 @@ body, html {
     .hero {
         margin-left: 10px;
         margin-right: 10px;
+        height: 40vh;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .hero-container {
+        top: -80px; 
     }
 
     .card {
@@ -134,16 +153,29 @@ body, html {
         width: 200px;
         height: 200px;
     }
-
-    .hero-container {
-        top: -80px; 
-    }
 }
 
 @media (max-width: 480px) {
+    header{
+        position: relative;
+        z-index: 1000;
+    }
+
     .hero {
         margin-left: 5px;
         margin-right: 5px;
+        height: 35vh;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .hero-container {
+        top: -60px; 
     }
 
     .card {
@@ -161,9 +193,5 @@ body, html {
     .card img {
         width: 150px;
         height: 150px;
-    }
-
-    .hero-container {
-        top: -60px; 
     }
 }
