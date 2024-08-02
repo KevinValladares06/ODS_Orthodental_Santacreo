@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -13,6 +12,7 @@ main {
 
 body {
     background: linear-gradient(90deg, #ffffff 30%, #ffffff 30%, #ffffff 100%);
+    font-family: 'Open Sans', Arial , sans-serif;
 }
 
 .contacts{
