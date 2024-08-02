@@ -3,16 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="Css/Inicio.css" />
     <link rel="stylesheet" href="Css/Testimonios.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"/>
     <title>Testimonios</title>
   </head>
   <body>
@@ -43,7 +38,6 @@
       </div>
     </header>
     <section class="section__container">
-      <h2>Testimonios</h2>
       <h1>Opiniones Destacadas</h1>
       <div class="section__grid">
         <div class="section__card">
@@ -209,7 +203,7 @@
 
       <div class="wrappers">
         <h3>Valora Nuestro Servicio</h3>
-        <form action="#">
+        <form id="ratingForm" action="#">
           <div class="rating">
             <input type="number" name="rating" hidden />
             <i class="bx bx-star star" style="--i: 0"></i>
@@ -219,19 +213,23 @@
             <i class="bx bx-star star" style="--i: 4"></i>
           </div>
           <textarea
+            id="opinion"
             name="opinion"
             cols="30"
             rows="5"
             placeholder="Tu opinión..."
+            maxlength="100"
           ></textarea>
+          <div id="error" class="error"></div>
           <div class="btn-group">
             <button type="submit" class="btn submit">Submit</button>
-            <button class="btn cancel">Cancel</button>
+            <button type="button" class="btn cancel">Cancel</button>
           </div>
         </form>
       </div>
     </section>
     <script src="JS/TestimoniosForm.js"></script>
+    <script src="JS/TestimonioValidacion.js"></script>
 
     <footer>
       <div class="containers">
@@ -313,6 +311,6 @@
         </div>
       </div>
     </footer>
-    <script src="JS/Main.js"></script>
+    <script src="JS/Inicio.js"></script>
   </body>
 </html>
