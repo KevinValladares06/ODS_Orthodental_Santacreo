@@ -1,3 +1,4 @@
+/* Estilos globales y reset */
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +14,14 @@ header {
     width: 100%;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título */
+.title {
+    text-align: center;
+    margin: 105px 3;
+    font-size: 4rem;
+    color: #00000086;
 }
 
 .container-cards {

@@ -13,6 +13,13 @@ body {
 .containerss {
 	padding: 50px 0;
 }
+/* Estilos para el título */
+.titles {
+    text-align: center;
+    margin: 105px 3;
+    font-size: 4rem;
+    color: #00000086;
+}
 
 .wrapper {
 	padding: 10px 10%;
