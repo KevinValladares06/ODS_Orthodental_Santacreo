@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 
 * {
     padding: 0;
@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Arial , sans-serif;
 }
 
 .container {
@@ -150,16 +150,22 @@ h1 {
     }
 }
 
+@media (max-width: 480px){
+    header{
+        position: relative;
+        z-index: 1000;
+    }
+}
+
 /* INICIO */
-.hero {
-    position:relative;
-    background-color: #999;
+.heros {
+    position: relative;
     height: 85vh;
     overflow: hidden;
     width:100vw;
 }
 
-.hero img{
+.heros img{
     position: absolute;
     top: 0;
     left: 0;
@@ -172,7 +178,7 @@ h1 {
     margin-top: 70px;
 }
 
-.hero .hero-content{
+.heros .heros-content{
     position:absolute;
     width: 300px;
     top:calc(50% - 150px);
@@ -180,7 +186,7 @@ h1 {
     color:#fff;
 }
 
-.hero .hero-content button {
+.heros .heros-content button {
     font-size: 1.1rem;
     display:inline-block;
     padding: 0.5rem 2rem;
@@ -189,6 +195,49 @@ h1 {
     border: 1px solid #094a72;
     border-radius: 27px;
     margin-top: 22rem;
+}
+
+
+@media (max-width: 768px) {
+    .heros {
+        height: 60vh;
+    }
+
+    .heros .heros-content {
+        width: 90%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .heros .heros-content button {
+        margin-top: 20.5rem;
+        padding: 0.5rem 0.5rem;
+        font-size: 1rem;
+        margin-left: 7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .heros {
+        height: 50vh;
+        margin-top: -5rem;
+        position: outside;
+    }
+
+    .heros .heros-content {
+        width: 95%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .heros .heros-content button {
+        margin-top: 16.5rem;
+        padding: 0.5rem 0.5rem;
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
 }
 
 .carousel-containers {
@@ -201,8 +250,8 @@ h1 {
 
 .carousel {
     display: flex;
-    transition: transform 0.3s linear; /* Aumentar la velocidad de la transición */
-    width: calc(6 * (15% - 20px) + 6 * 20px); /* Ajusta la longitud total del carrusel basado en el número de imágenes */
+    transition: transform 0.3s linear;
+    width: calc(6 * (15% - 20px) + 6 * 20px);
 }
 
 .image-boxs {
@@ -211,11 +260,11 @@ h1 {
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
-    width: calc(15% - 20px); /* Ajusta el ancho de cada caja para que quepan más en una fila */
+    width: calc(15% - 20px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-    flex: 1 0 calc(25% - 40px); /* Asegura que cada imagen ocupe menos espacio */
-    margin: 10px; /* Añade un margen para las imágenes */
+    flex: 1 0 calc(25% - 40px);
+    margin: 10px;
 }
 
 .image-boxs img {
@@ -226,19 +275,19 @@ h1 {
 
 @media (max-width: 1024px) {
     .image-boxs {
-        flex: 1 0 calc(33.33% - 40px); /* 3 por fila en tabletas */
+        flex: 1 0 calc(33.33% - 40px);
     }
 }
 
 @media (max-width: 768px) {
     .image-boxs {
-        flex: 1 0 calc(50% - 40px); /* 2 por fila en móviles */
+        flex: 1 0 calc(50% - 40px);
     }
 }
 
 @media (max-width: 480px) {
     .image-boxs {
-        flex: 1 0 calc(100% - 40px); /* 1 por fila en móviles pequeños */
+        flex: 1 0 calc(100% - 40px);
     }
 }
 
@@ -246,10 +295,10 @@ h1 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: transparent; /* Fondo transparente */
-    color: #333; /* Color del texto del botón */
+    background: rgba(0, 67, 130, 0.5); /* Fondo semi-transparente */
+    color: #fff; /* Color del texto del botón */
     border: none;
-    font-size: 2px; /* Tamaño del símbolo */
+    font-size: 24px; /* Tamaño del símbolo */
     padding: 10px;
     cursor: pointer;
     z-index: 10;
@@ -263,8 +312,9 @@ h1 {
     right: 10px;
 }
 
-
-
+.carousel-button:hover {
+    background: rgba(75, 177, 218, 0.7);
+}
 
 
 
