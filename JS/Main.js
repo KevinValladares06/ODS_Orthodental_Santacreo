@@ -16,9 +16,9 @@ lightMode.addEventListener('click', ()=> {
 /*Carusel*/ 
 document.addEventListener('DOMContentLoaded', () => {
     const carousel = document.querySelector('.carousel');
-    const totalImages = document.querySelectorAll('.image-box').length;
+    const totalImages = document.querySelectorAll('.image-boxs').length;
     const visibleImages = 3; // Cambia esto si cambia el número de imágenes visibles
-    const imageWidth = carousel.querySelector('.image-box').clientWidth;
+    const imageWidth = carousel.querySelector('.image-boxs').clientWidth;
     let offset = 0;
     let interval;
   
