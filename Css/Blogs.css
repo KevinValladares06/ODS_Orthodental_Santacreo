@@ -17,8 +17,10 @@ body {
 .titles {
     text-align: center;
     margin: 105px 3;
-    font-size: 4rem;
-    color: #074b79c4;
+    font-size: 3rem;
+    color: #094a72;
+    margin-top: 7rem;
+    margin-right: 7rem;
 }
 
 .wrapper {
