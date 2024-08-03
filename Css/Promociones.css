@@ -8,6 +8,11 @@
 
 body {
     background: rgba(255, 253, 253, 0.822);
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 
 header {
